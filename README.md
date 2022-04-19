@@ -40,7 +40,13 @@ For this milestone you will have created a wireframe prototype in Figma.
 
 ### Milestone 2
 
-My next stand up will go here...
+This week I worked on setting up a React app from scratch. While aesthetically it may not look like much, I'm satisifed with the foundation of my app having created the pages and working routes.
+
+It initially was challenging recalling how to start my own project from scratch again. I also had a small issue in which having the header enclose in the incorrect part in my code, caused my pages to not dynamically load new components.
+
+I accomplished creating my own React app.
+
+I plan on implementing design since I've implemented some functionality.
 
 ### Milestone 3
 
