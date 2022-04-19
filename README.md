@@ -3,11 +3,11 @@
 
 # Project Name: WDP2 Portfolio Project
 
-### Student First & Last Name
+### Aleyna Cintron
 
-🆔 &nbsp; 000#######
+🆔 &nbsp; 0005001842#######
 
-📪 &nbsp; email@student.fullsail.edu
+📪 &nbsp; ACintron1@student.fullsail.edu
 
 
 ![Degree Program](https://img.shields.io/badge/Degree-Web%20Development-orange?logo=gnometerminal)
@@ -34,7 +34,9 @@ Each week I will summarize my milestone activity and progress by writing a stand
 
 ### Milestone 1
 
-For this milestone you will have created a wireframe prototype in Figma.  Post your link here, so you have easy access to it.
+For this milestone you will have created a wireframe prototype in Figma.
+
+[Figma Prototype](https://www.figma.com/file/yVAHaJ8GLL09mEsYYxMTSS/1.3-Milestone-1%3A-Prototyping?node-id=0%3A1)
 
 ### Milestone 2
 
