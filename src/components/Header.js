@@ -1,16 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaCog } from 'react-icons/fa';
+import logo from '../images/logo.png';
 
 const Header = () => {  
     return (
       <header style={styles.header}>
         <Link to="/">
-          <h1>Home</h1>
+          <img style={styles.logo} src={logo} alt="Logo" />
         </Link>
         <nav style={styles.nav}>
-          <Link to="/productDetails" style={styles.padding}>ProductDetails</Link>
-          <Link to="/search" style={styles.padding}>search</Link>
+          {/* <Link to="/productDetails" style={styles.padding}>ProductDetails</Link>
+          <Link to="/search" style={styles.padding}>search</Link> */}
         </nav>
         <div style={styles.rtNav}>
           <Link to="/settings"><FaCog style={styles.icons} /></Link>
@@ -34,7 +35,10 @@ const styles= {
     color: 'gray',
     position:'absolute',
     zIndex: '1',
-    height: '100%'
+    height: '100%',
+    backgroundColor: "#F7BECA",
+    width: "2.5rem",
+    opacity: "0.90"
   },
   nav:  {
     display: 'flex',
@@ -52,8 +56,8 @@ const styles= {
     alignItems: 'center',
   },
   logo: {
-    width: 50,
-    height: 50
+    width: 60,
+    height: 60
   },
   h1:{
     fontSize: 30,
@@ -86,6 +90,7 @@ const styles= {
     display: 'flex',
     alignItems: 'center',
     height: 50,
+    marginBottom: "10px"
   },
   avatar: {
     paddingRight: 10,
@@ -94,7 +99,8 @@ const styles= {
   },
   icons: {
     fontSize: 26,
-    paddingLeft: 10,
+    padding: 20,
     cursor: 'pointer',
+    color: "#340410"
   }
 }

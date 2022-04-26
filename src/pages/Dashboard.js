@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
-import ReactFullpage from '@fullpage/react-fullpage'
-import { getQueriesForElement } from '@testing-library/dom';
+import ReactFullpage from '@fullpage/react-fullpage';
+import SearchBar from '../components/SearchBar';
 
 function Dashboard () {
         return (
@@ -11,7 +11,7 @@ function Dashboard () {
                     render={() =>
                     (<ReactFullpage.Wrapper>
                         <div className="section" style={styles.s1}>
-                            <h1></h1>
+                            <SearchBar></SearchBar>
                         </div>
                         <div className="section" style={styles.s2}>
                             <h1></h1>
@@ -32,22 +32,18 @@ export default Dashboard
 const styles = {
     container: {
         padding:'8rem',
-        marginLeft:'3rem',
-        
+        marginLeft:'3rem'
     },
     s1: {
         background:"url('https://images.pexels.com/photos/3025620/pexels-photo-3025620.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')",
-        backgroundSize: "cover",
-        height: "25px"
+        backgroundSize: "cover"
     },
     s2:{    
-        background:"url('https://images.pexels.com/photos/3373746/pexels-photo-3373746.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')",
-        backgroundSize: "cover",
+        background:"url('https://images.pexels.com/photos/4620874/pexels-photo-4620874.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')",
+        backgroundSize: "cover"
     },
     s3:{
         background: "url('https://images.pexels.com/photos/5119202/pexels-photo-5119202.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')",
-        backgroundSize: "cover",
-
-        
+        backgroundSize: "cover"
     }
 }
