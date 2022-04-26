@@ -32,12 +32,15 @@ const styles = {
   },
   container: {
     display: 'flex',
-    flexDirection: 'row',
+    flexDirection: 'column',
     justifyContent: 'space-between',
     backgroundColor: 'white'
   }, 
   nav: {
     display: 'flex',
+    flexDirection: 'column',
+    position: "relative",
+    xIndex:"1"
   },
   main: {
     display: 'flex',

@@ -23,7 +23,7 @@ export default Header
 const styles= {
   header: {
     display: 'flex',
-    flexDirection: 'row',
+    flexDirection: 'column',
     justifyContent: 'space-between',
     alignItems: 'center',
     paddingLeft: 20,
@@ -31,11 +31,14 @@ const styles= {
     paddingTop: 10,
     paddingBottom: 10,
     backgroundColor: 'white',
-    color: 'gray'
+    color: 'gray',
+    position:'absolute',
+    zIndex: '1',
+    height: '100%'
   },
   nav:  {
     display: 'flex',
-    flexDirection: 'row',
+    flexDirection: 'column',
     fontSize: '1.5rem',
     alignItems: 'center',
     justifyContent: 'center',
