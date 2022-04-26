@@ -27,12 +27,12 @@ function Dashboard () {
     
         )    
 }
-export default Dashboard
+export default Dashboard;
 
 const styles = {
     container: {
         padding:'8rem',
-        marginLeft:'3rem'
+        marginLeft:'3rem',
     },
     s1: {
         background:"url('https://images.pexels.com/photos/3025620/pexels-photo-3025620.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')",

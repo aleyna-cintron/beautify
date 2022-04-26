@@ -1,12 +1,16 @@
 import React from 'react';
-import { BsSearch } from 'react-icons/bs'
+import { BsSearch } from 'react-icons/bs';
+import { Link } from 'react-router-dom';
+
 const SearchBar = () => {
     return (
         <div>
             <div style={styles.searchBackground}>
             <input type="text" placeholder="Search" style={styles.searchBar}/>
             <div style={styles.iconContainer}>
-                <BsSearch style={styles.searchIcon} size={23}></BsSearch>
+                <Link to="/search">
+                    <BsSearch style={styles.searchIcon} size={22}></BsSearch>
+                </Link>
             </div>
             
             </div>
