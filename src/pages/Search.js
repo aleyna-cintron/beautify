@@ -57,23 +57,28 @@ function Search () {
                 searchInput.length > 1 ? (
                     searchResults.map((item) => {
                         return(
-                            <ProductCard 
-                            image={item.image_link} 
-                            key={item.id} 
-                            name={item.name} 
-                            description={item.description}
-                            />
+                            <Link to={"productDetails/"+item.id}>
+                                <ProductCard 
+                                    image={item.image_link} 
+                                    key={item.id} 
+                                    name={item.name} 
+                                    description={item.description}
+                                />
+                            </Link>
+                            
                         )
                     })
                 ) : (
                     itemData.map((item) => {
                         return(
-                            <ProductCard 
-                            image={item.image_link} 
-                            key={item.id} 
-                            name={item.name} 
-                            description={item.description}
-                            />
+                            <Link to={"productDetails/"+item.id}>
+                                <ProductCard 
+                                    image={item.image_link} 
+                                    key={item.id} 
+                                    name={item.name} 
+                                    description={item.description}
+                                />
+                            </Link>
                         )
                     })
                 )}
