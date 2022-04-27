@@ -2,17 +2,21 @@ import React from 'react';
 import { BsSearch } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
 
-const SearchBar = () => {
+const SearchBar = (searchItems) => {
     return (
         <div>
             <div style={styles.searchBackground}>
-            <input type="text" placeholder="Search" style={styles.searchBar}/>
-            <div style={styles.iconContainer}>
-                <Link to="/search">
-                    <BsSearch style={styles.searchIcon} size={22}></BsSearch>
-                </Link>
-            </div>
-            
+            <form style={styles.searchForm}>
+                <input 
+                    onChange={(e) => searchItems(e.target.value)} placeholder="Search" 
+                    style={styles.searchBar}
+                />
+                <div style={styles.iconContainer}>
+                    <Link to="/search">
+                        <BsSearch style={styles.searchIcon} size={22}></BsSearch>
+                    </Link>
+                </div>
+            </form>
             </div>
         </div>
     );
@@ -31,12 +35,17 @@ const styles = {
         width: "22%",
         margin: "auto",
         padding: "0.3rem",
-        display:"flex"
+        display:"flex",
+        flexDirection: "row"
     },
     searchIcon: {
         color: "#340410",
     },
     iconContainer: {
         margin: "auto"
+    },
+    searchForm: {
+        display: 'flex',
+        justifyContent:"space-around"
     }
 }
