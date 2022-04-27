@@ -49,8 +49,19 @@ I accomplished creating my own React app.
 I plan on implementing design since I've implemented some functionality.
 
 ### Milestone 3
+##### API
+[Makeup-API](https://makeup-api.herokuapp.com/)
 
-Stay tuned, this stand up is coming soon...
+##### Libraries
+[Material-UI](https://mui.com/material-ui/getting-started/installation/)
+[React-FullPage.js](https://github.com/alvarotrigo/react-fullpage)
+[My FullPage.js Tutorial](https://web.microsoftstream.com/video/53076cab-bafe-425b-b0d0-e9d7950f983b)
+
+##### Persistant Data
+This week I didn't implement one. I'm still debating on which one to use. I planned on using MongoDB, but since my project's API doesn't have a API request by id, I may use typescript to store the products details for the details page. I'll need more time to learn how to implement this so I figured its better saved for next week.
+
+##### Additional Notes
+This was definitely the most challenging week for me since coming to Full Sail. There's a lot I had to learn on my own and it exposed even more concepts that I still don't understand. I plan on working to better understand how to transfer data between files using functional components in React.
 
 ### Milestone 4
 
