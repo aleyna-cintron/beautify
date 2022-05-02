@@ -10,7 +10,6 @@ function ProductDetails () {
 
     // Select ID from params
     const {id} = useParams();
-    console.log("this is my id " + id);
 
     useEffect(() =>{
         async function fetchAPI(){
@@ -31,23 +30,23 @@ function ProductDetails () {
         <div style={styles.container}>
             <div className='productInfo' style={styles.productInfo}>
                 <div className='leftSide'>
-                    <Typography variant="h5" component="div">
+                    <Typography variant="h5" component="div" style={styles.vollkorn}>
                         {itemData.name}
                     </Typography>
                     <img src={itemData.image_link} alt={itemData.name} style={styles.img}></img>
-                    <Typography gutterBottom variant="body1" component="div">
+                    <Typography gutterBottom variant="body1" component="div" style={styles.vollkorn}>
                         Price: ${itemData.price}
                     </Typography>
-                    <Typography gutterBottom variant="body1" component="div"> Rating: {itemData.rating} stars</Typography>
+                    <Typography gutterBottom variant="body1" component="div" style={styles.vollkorn}> Rating: {itemData.rating} stars</Typography>
                 </div>
                 <section className='rightSide' style={styles.rightSide}>
-                    <Typography gutterBottom variant="subtitle1" component="div">
+                    <Typography gutterBottom variant="h5" component="div" style={styles.vollkorn}>
                         About this product:
                     </Typography>
-                    <Typography gutterBottom variant="body1" component="div">
+                    <Typography gutterBottom variant="body1" component="div" style={styles.roboto}>
                         {itemData.description}
                     </Typography>
-                    <Typography gutterBottom variant="body2" component="div">
+                    <Typography gutterBottom variant="body2" component="div" style={styles.roboto}>
                         Interested in this product? <a href={itemData.website_link}>Click Here</a> to find where to purchase it
                     </Typography>
                 </section>
@@ -78,4 +77,12 @@ const styles = {
         margin:'auto',
         marginTop: '5rem',
     },
+    roboto: {
+        fontFamily: "'Roboto', sans-serif",
+        color: 'black'
+    },
+    vollkorn: {
+        fontFamily: "'Vollkorn', serif", 
+        color: '#340410'
+    }
 }

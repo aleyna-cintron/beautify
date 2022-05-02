@@ -112,6 +112,8 @@ const styles = {
         width: "25rem",
         padding: "0.7rem",
         color: "#340410",
+        fontFamily: "'Roboto', sans-serif",
+        color: '#340410', 
     },
     searchBackground: {
         backgroundColor: "#FCEAEE",
@@ -135,6 +137,9 @@ const styles = {
         color: 'inherit', textDecoration: 'inherit'
     },
     h3 : {
-        padding:'2rem'
+        padding:'2rem',
+        fontFamily: "'Roboto', sans-serif",
+        color: '#340410', 
+
     }
 }

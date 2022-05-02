@@ -13,6 +13,7 @@ function Dashboard () {
                 <ReactFullpage
                     debug
                     navigation
+                    anchors={['part1','part2','part3']}
                     render={() =>
                     (<ReactFullpage.Wrapper>
                         <div className="section" style={styles.s1}>
@@ -60,18 +61,20 @@ const styles = {
         backgroundSize: "cover"
     },
     noTextDecor: {
-        color: 'white', 
+        color: '#340410', 
         textDecoration: 'inherit'
     },
     h2: {
-        color: 'white',
+        color: '#FCEAEE',
         opacity:'1.00',
-        padding: '3rem'
-        
+        padding: '3rem',
+        fontFamily: "'Vollkorn', serif"
     },
     btn: {
         width: '13rem',
         fontSize: '2rem',
+        fontFamily: "'Vollkorn', serif",
+        backgroundColor:'#FCEAEE',
     },
     homeText: {
         maxWidth: '60%',
@@ -83,6 +86,6 @@ const styles = {
         padding: '1rem',
         paddingTop:'2rem',
         paddingBottom:'2rem',
-        backgroundColor: 'rgba(0,0,255,0.5)'
+        backgroundColor: 'rgb(52, 4, 16, 0.5)'
     }
 }

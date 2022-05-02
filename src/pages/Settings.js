@@ -14,7 +14,7 @@ function ProfileSettings() {
 
   return (
     <div style={styles.container}>
-        <Typography variant="h3" component="div" style={styles.h2}>
+        <Typography variant="h3" component="div" style={styles.vollkorn}>
             Profile Settings
         </Typography>
     
@@ -85,7 +85,8 @@ const styles = {
         maxWidth: '20%',
         gap: '25px'
     },
-    h2: {
-        textAlign: 'center'
+    vollkorn: {
+        fontFamily: "'Vollkorn', serif", 
+        color: '#340410'
     }
 }

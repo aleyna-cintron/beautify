@@ -16,16 +16,16 @@ const ProductCard = props => {
             image={props.image}
           />
           <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
+            <Typography gutterBottom variant="h5" component="div" style={styles.vollkorn}>
               {props.name}
             </Typography>
-            <Typography variant="body1" color="text.secondary">
+            <Typography variant="body1" color="text.secondary" style={styles.roboto}>
               Price: ${props.price}
             </Typography>
-            <Typography variant="body1" color="text.secondary">
+            <Typography variant="body1" color="text.secondary" style={styles.roboto}>
               Product Type: {props.product_type}
             </Typography>
-            <Typography variant="body1" color="text.secondary">
+            <Typography variant="body1" color="text.secondary" style={styles.roboto}>
               Brand: {props.brand}
             </Typography>
           </CardContent>
@@ -43,5 +43,13 @@ const styles = {
   img: {
     width: 'auto',
     margin: 'auto'
+  },
+  roboto: {
+    fontFamily: "'Roboto', sans-serif",
+    color: 'black', 
+  },
+  vollkorn: {
+    fontFamily: "'Vollkorn', serif",
+    color: '#340410', 
   }
 }
