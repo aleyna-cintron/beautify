@@ -8,9 +8,9 @@ import Typography from '@mui/material/Typography';
 
 const ProductCard = props => {
     return (
-        <Card sx={{ maxWidth: 345 }}>
+        <Card sx={{ width: 345, height: 345}} style={styles.card}>
         <CardActionArea>
-          <CardMedia
+          <CardMedia style={styles.img}
             component="img"
             height="140"
             image={props.image}
@@ -20,10 +20,13 @@ const ProductCard = props => {
               {props.name}
             </Typography>
             <Typography variant="body1" color="text.secondary">
+              Price: ${props.price}
+            </Typography>
+            <Typography variant="body1" color="text.secondary">
               Product Type: {props.product_type}
             </Typography>
             <Typography variant="body1" color="text.secondary">
-              description: {props.description}
+              Brand: {props.brand}
             </Typography>
           </CardContent>
         </CardActionArea>
@@ -32,3 +35,13 @@ const ProductCard = props => {
 }
 
 export default ProductCard;
+
+const styles = {
+  card: {
+    overflow: 'hidden'
+  },
+  img: {
+    width: 'auto',
+    margin: 'auto'
+  }
+}

@@ -1,5 +1,4 @@
 import React, {useEffect, useState} from 'react';
-import axios from 'axios';
 import ProductCard from '../components/ProductCard';
 import { BsSearch } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
@@ -15,11 +14,11 @@ function Search () {
 
             const data = await response.json();
 
-            let newArr = [];
-            for (let i=500; i<700; i++){
-                newArr.push(data[i])
+            let newProductArr = [];
+            for (let i=550; i<750; i++){
+                newProductArr.push(data[i])
             }
-            setItemData(newArr);
+            setItemData(newProductArr);
         }
         fetchAPI()
         
@@ -60,18 +59,19 @@ function Search () {
                     </form>
                 </div>
             </div>
-            <section style={styles.searchContainer}>
+            <section style={styles.searchContainer} >
                 {
                 searchInput.length > 1 ? (
                     searchResults.map((item) => {
                         return(
-                            <Link to={"productDetails/"+item.id}>
-                                <ProductCard 
+                            <Link to={"productDetails/"+item.id} style={styles.noTextDecor}>
+                                <ProductCard style={styles.noDecor}
                                     image={item.image_link} 
                                     key={item.id} 
                                     name={item.name} 
                                     product_type={item.product_type}
-                                    description={item.description}                                
+                                    brand={item.brand}    
+                                    price={item.price}               
                                     />
                             </Link>
                             
@@ -80,13 +80,14 @@ function Search () {
                 ) : (
                     itemData.map((item) => {
                         return(
-                            <Link to={"productDetails/"+item.id}>
+                            <Link to={"productDetails/"+item.id} style={styles.noTextDecor} >
                                 <ProductCard 
                                     image={item.image_link} 
                                     key={item.id} 
                                     name={item.name} 
                                     product_type={item.product_type}
-                                    description={item.description}
+                                    brand={item.brand} 
+                                    price={item.price}
                                 />
                             </Link>
                         )
@@ -109,15 +110,15 @@ const styles = {
         flexWrap: "wrap",
         alignContent:"space-between",
         gap:'3rem'
-    },
+        },
     searchBar: {
-        width: "20rem",
+        width: "25rem",
         padding: "0.7rem",
         color: "#340410",
     },
     searchBackground: {
         backgroundColor: "#FCEAEE",
-        width: "22%",
+        width: "25rem",
         margin: "auto",
         padding: "0.3rem",
         display:"flex",
@@ -132,5 +133,8 @@ const styles = {
     searchForm: {
         display: 'flex',
         justifyContent:"space-around"
+    },
+    noTextDecor: {
+        color: 'inherit', textDecoration: 'inherit'
     }
 }
