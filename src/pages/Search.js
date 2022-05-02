@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import ProductCard from '../components/ProductCard';
-import { BsSearch } from 'react-icons/bs';
+import Typography from '@mui/material/Typography'; 
 import { Link } from 'react-router-dom';
 
 function Search () {
@@ -39,7 +39,9 @@ function Search () {
 
     return (
         <div>
-            <h1>Main Search Page</h1>
+            <Typography variant="h3" component="div" style={styles.h3}>
+                Beautify 
+            </Typography>
             <div>
                 <div style={styles.searchBackground}>
                     <form style={styles.searchForm}>
@@ -51,11 +53,6 @@ function Search () {
                             placeholder="Search" 
                             style={styles.searchBar}
                         />
-                        {/* <div style={styles.iconContainer}>
-                            <button type="submit">
-                                <BsSearch style={styles.searchIcon} size={22}></BsSearch>
-                            </button>
-                        </div> */}
                     </form>
                 </div>
             </div>
@@ -136,5 +133,8 @@ const styles = {
     },
     noTextDecor: {
         color: 'inherit', textDecoration: 'inherit'
+    },
+    h3 : {
+        padding:'2rem'
     }
 }
