@@ -59,7 +59,7 @@ export default ProductDetails
 
 const styles = {
     container: {
-        padding: '5rem',
+        padding: '3rem',
         paddingLeft: '15rem',
         marginTop: '4rem'
     },
