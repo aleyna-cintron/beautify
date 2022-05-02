@@ -10,12 +10,20 @@ function Search () {
     const [searchInput, setSearchInput] = useState('');
 
     useEffect(() =>{
-        axios.get('http://makeup-api.herokuapp.com/api/v1/products.json')
-            .then((res) => {
-                setItemData(res.data);
-                console.log(itemData)
-        })
-    }, [])
+        async function fetchAPI(){
+            const response = await fetch('http://makeup-api.herokuapp.com/api/v1/products.json')
+
+            const data = await response.json();
+
+            let newArr = [];
+            for (let i=500; i<700; i++){
+                newArr.push(data[i])
+            }
+            setItemData(newArr);
+        }
+        fetchAPI()
+        
+    }, []);
 
     const searchItems = (searchValue) => {
         setSearchInput(searchValue)
@@ -62,8 +70,9 @@ function Search () {
                                     image={item.image_link} 
                                     key={item.id} 
                                     name={item.name} 
-                                    description={item.description}
-                                />
+                                    product_type={item.product_type}
+                                    description={item.description}                                
+                                    />
                             </Link>
                             
                         )
@@ -76,6 +85,7 @@ function Search () {
                                     image={item.image_link} 
                                     key={item.id} 
                                     name={item.name} 
+                                    product_type={item.product_type}
                                     description={item.description}
                                 />
                             </Link>

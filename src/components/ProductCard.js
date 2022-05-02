@@ -19,8 +19,11 @@ const ProductCard = props => {
             <Typography gutterBottom variant="h5" component="div">
               {props.name}
             </Typography>
-            <Typography variant="body2" color="text.secondary">
-              {props.description}
+            <Typography variant="body1" color="text.secondary">
+              Product Type: {props.product_type}
+            </Typography>
+            <Typography variant="body1" color="text.secondary">
+              description: {props.description}
             </Typography>
           </CardContent>
         </CardActionArea>
