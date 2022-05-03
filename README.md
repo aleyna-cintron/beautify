@@ -65,7 +65,14 @@ This was definitely the most challenging week for me since coming to Full Sail. 
 
 ### Milestone 4
 
-My final stand up...
+I absolutely loved using the card component from Material UI last week so much so that I decided to continue using Material UI for my front-end styling. I implemented their form and typography components to easily design my webpages. 
+
+The ease and efficiency of using Material UI as well as the curiousity to implement other components is why I chose to use it again. 
+
+I made a lot of changes since Milestone 3, I implemented local storage so that the user information on settings page is saved. I also created the details page and used params to aquire the id and make a specific api call for it. 
+
+The typography, colors, and placement of elements have been adjusted as well.
+
 
 <br>
 <br>
