@@ -3,11 +3,11 @@
 
 # Project Name: WDP2 Portfolio Project
 
-### Student First & Last Name
+### Aleyna Cintron
 
-🆔 &nbsp; 000#######
+🆔 &nbsp; 0005001842#######
 
-📪 &nbsp; email@student.fullsail.edu
+📪 &nbsp; ACintron1@student.fullsail.edu
 
 
 ![Degree Program](https://img.shields.io/badge/Degree-Web%20Development-orange?logo=gnometerminal)
@@ -34,19 +34,45 @@ Each week I will summarize my milestone activity and progress by writing a stand
 
 ### Milestone 1
 
-For this milestone you will have created a wireframe prototype in Figma.  Post your link here, so you have easy access to it.
+For this milestone you will have created a wireframe prototype in Figma.
+
+[Figma Prototype](https://www.figma.com/file/yVAHaJ8GLL09mEsYYxMTSS/1.3-Milestone-1%3A-Prototyping?node-id=0%3A1)
 
 ### Milestone 2
 
-My next stand up will go here...
+This week I worked on setting up a React app from scratch. While aesthetically it may not look like much, I'm satisifed with the foundation of my app having created the pages and working routes.
+
+It initially was challenging recalling how to start my own project from scratch again. I also had a small issue in which having the header enclose in the incorrect part in my code, caused my pages to not dynamically load new components.
+
+I accomplished creating my own React app.
+
+I plan on implementing design since I've implemented some functionality.
 
 ### Milestone 3
+##### API
+[Makeup-API](https://makeup-api.herokuapp.com/)
 
-Stay tuned, this stand up is coming soon...
+##### Libraries
+[Material-UI](https://mui.com/material-ui/getting-started/installation/)
+[React-FullPage.js](https://github.com/alvarotrigo/react-fullpage)
+[My FullPage.js Tutorial](https://web.microsoftstream.com/video/53076cab-bafe-425b-b0d0-e9d7950f983b)
+
+##### Persistant Data
+This week I didn't implement one. I'm still debating on which one to use. I planned on using MongoDB, but since my project's API doesn't have a API request by id, I may use typescript to store the products details for the details page. I'll need more time to learn how to implement this so I figured its better saved for next week.
+
+##### Additional Notes
+This was definitely the most challenging week for me since coming to Full Sail. There's a lot I had to learn on my own and it exposed even more concepts that I still don't understand. I plan on working to better understand how to transfer data between files using functional components in React.
 
 ### Milestone 4
 
-My final stand up...
+I absolutely loved using the card component from Material UI last week so much so that I decided to continue using Material UI for my front-end styling. I implemented their form and typography components to easily design my webpages. 
+
+The ease and efficiency of using Material UI as well as the curiousity to implement other components is why I chose to use it again. 
+
+I made a lot of changes since Milestone 3, I implemented local storage so that the user information on settings page is saved. I also created the details page and used params to aquire the id and make a specific api call for it. 
+
+The typography, colors, and placement of elements have been adjusted as well.
+
 
 <br>
 <br>
