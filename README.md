@@ -18,15 +18,21 @@ To get started with Beautify, follow these steps:
 
 1. Clone the repository from GitHub:
 
-`git clone https://github.com/ePortfolios/WDV229-2204-Portfolio-Project-CintronAleyna-FS.git`
+   ```
+   git clone https://github.com/ePortfolios/WDV229-2204-Portfolio-Project-CintronAleyna-FS.git
+   ```
 
 2. Install the required dependencies:
 
-`npm install`
+   ```
+   npm install
+   ```
 
 3. Launch the application:
 
-`npm start`
+   ```
+   npm start
+   ```
 
 4. Access the application through your web browser at [http://localhost:3000](http://localhost:3000).
 
