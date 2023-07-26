@@ -17,7 +17,7 @@ function App() {
           <Route exact path='/' element={<Dashboard />} />  
           <Route path='/settings' element={<Settings />} /> 
           <Route path='/search' element={<Search />} />
-          <Route path= "search/productDetails/:id" element={<ProductDetails />} />
+          <Route path= '/search/productDetails/:id' element={<ProductDetails />} />
         </Routes>
       </section> 
     </div>
