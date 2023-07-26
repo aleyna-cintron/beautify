@@ -10,7 +10,7 @@ function Search () {
 
     useEffect(() =>{
         async function fetchAPI(){
-            const response = await fetch('http://makeup-api.herokuapp.com/api/v1/products.json')
+            const response = await fetch('https://makeup-api.herokuapp.com/api/v1/products.json')
 
             const data = await response.json();
 
